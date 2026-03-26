@@ -190,6 +190,77 @@ public class pattern1 {
     }
 
 
+
+
+    public void  print10(int n){
+        for (int i = 0; i <= 2*n- 1 ; i++) {
+            int stars = i ;
+
+            if (i > n )   stars = 2*n - i;
+            for (int j = 1; j <= stars; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    public void print11(int n){
+        int start = 1 ;
+
+        for (int i = 0; i <= n; i++) {
+
+            if (i  % 2 == 0 ) start =  1 ;
+            else start = 0 ;
+
+            for (int j = 0 ; j <= i ; j++) {
+                System.out.print(start + " " );
+                start = 1 - start ;
+
+            }
+            System.out.println();
+        }
+    }
+
+ public  void print12(int n){
+
+ }
+
+
+
+    //1
+    //2 3
+    //4 5 6
+    //7 8 9 10
+    //11 12 13 14 15
+    public  void print13(int n){
+        int x = 1 ;
+
+        for (int i = 1; i <= n; i++) {
+
+
+          for (int j = 1; j <= i; j++) {
+                System.out.print(x + " ");
+                x++ ;
+
+            }
+
+            System.out.println();
+        }
+    }
+    //2
+    //4 6
+    //8 10 12
+    //14 16 18 20
+    public  void print13Eventriangle(int n, int x ){
+
+             for (int i = 1; i < n; i++) {
+                    for(int j = 1; j <= i; j++) {
+                        System.out.print(x + " " );
+                        x = x + 2;
+                    }
+                 System.out.println();
+             }
+    }
+
     // ---------------- PRACTICE PATTERNS ----------------
 
 
@@ -285,29 +356,45 @@ public class pattern1 {
     }
 
 
-     public static void main(String[] args) {
+    public static void main(String[] args) {
 
-//        new patter1().print1();
-//        new patter1().print3(5);
-//        new patter1().print3plus2(9);
-   //    new patter1().print6(5);
-   //   new patter1().print5(5);
+        pattern1 p = new pattern1();
 
-        int arr [] = { 4};
+        int arr[] = {5};
+
         for (int j = 0; j < arr.length; j++) {
 
-//            new patter1().print2();
-            new pattern1().Hourglass(arr[j]);
+            // ---------------- BASIC PATTERNS ----------------
 
-            new pattern1().printButterfly(arr[j]);
+            // p.print1();
+            // p.print2();
+            // p.print3(arr[j]);
+
+            // p.print4(arr[j]);
+            // p.print4Reverse(arr[j]);
+            // p.print4ReverseInDiff1(arr[j]);
+            // p.print4ReverseInDiff2(arr[j]);
+
+            // p.print6(arr[j]);
+
+            // p.print7(arr[j]);
+            // p.print8(arr[j]);
+            // p.print9(arr[j]);
+
+            p.print10(arr[j]);
+            // p.print11(arr[j]);
+            // p.print12(arr[j]);
 
 
-//            new patter1().print4ReverseInDiff1(arr[j]);
-//            new patter1().print4ReverseInDiff2(arr[j]);
 
-//           new patter1().print4Reverse(arr[j]);
-//            new patter1().print4(arr[j]);
+            // p.print13(arr[j]);   // Today learned
+            // p.print13Eventriangle(arr[j], 20);
+
+            // ---------------- PRACTICE PATTERNS ----------------
+
+            // p.Hourglass(arr[j]);
+            // p.printButterfly(arr[j]);
+
         }
-
     }
 }
