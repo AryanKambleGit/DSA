@@ -275,7 +275,7 @@ public class pattern1 {
     //  * * * * * * *
     //* * * * * * * * *
     public void Hourglass(int n){
-        System.out.println(" This is Sheet 9th pattern  for  value = " + n  + " test case");
+        System.out.println(" This is Sheet hourglass pattern  for  value = " + n  + " test case");
 
         for (int i = n ; i >= 0; i--) {
             for (int j = 0; j < n-  i; j++) {
@@ -381,7 +381,7 @@ public class pattern1 {
             // p.print8(arr[j]);
             // p.print9(arr[j]);
 
-            p.print10(arr[j]);
+         //   p.print10(arr[j]);
             // p.print11(arr[j]);
             // p.print12(arr[j]);
 
@@ -392,7 +392,7 @@ public class pattern1 {
 
             // ---------------- PRACTICE PATTERNS ----------------
 
-            // p.Hourglass(arr[j]);
+             p.Hourglass(arr[j]);
             // p.printButterfly(arr[j]);
 
         }
